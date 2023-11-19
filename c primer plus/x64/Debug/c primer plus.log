@@ -1,0 +1,20 @@
+﻿  dispose.c
+  divisors   p161.c
+  exercise p352.c
+  exercises circulation p149-150.c
+D:\project\c_code\c primer plus\exercises circulation p149-150.c(1,1): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
+D:\project\c_code\c primer plus\exercises circulation p149-150.c(1,1): message : 之前在命令行上声明的“_CRT_SECURE_NO_WARNINGS”
+  exercises experssion P114-P115 .c
+  exercises p184 - p185.c
+  exercises str p318.c
+  fibonacci.c
+  r.drive0.c
+  rand0.c
+  rollem exercise.c
+  Structure and other forms of data  p377.c
+  try 1.c
+  统计单词程序p165-p166.c
+D:\project\c_code\c primer plus\统计单词程序p165-p166.c(1,1): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
+D:\project\c_code\c primer plus\统计单词程序p165-p166.c(1,1): message : 之前在命令行上声明的“_CRT_SECURE_NO_WARNINGS”
+  正在生成代码...
+  c primer plus.vcxproj -> D:\project\c_code\c primer plus\x64\Debug\c primer plus.exe

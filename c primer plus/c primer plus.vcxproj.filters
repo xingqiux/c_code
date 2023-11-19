@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exercises experssion P114-P115 .c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="exercises circulation p149-150.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="divisors   p161.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="统计单词程序p165-p166.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="exercises p184 - p185.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dispose.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fibonacci.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="try 1.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="exercises str p318.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rand0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="r.drive0.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="rollem exercise.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="exercise p352.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Structure and other forms of data  p377.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
