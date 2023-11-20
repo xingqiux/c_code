@@ -22,6 +22,38 @@ void ListCreate_F(LinkList &L,int n)
     }
 }
 /*在第i个结点前插入元素e，插入成功返回1，失败返回0*/
+int ListInsert(LinkList &L,int i,int e)
+
+{ LNode *p=L;
+
+int j=0;
+
+//补充完整，实现p指向第i-1个结点
+for(j = 0; p && j < i-1; ++j)
+{
+    p = p->next;
+}
+
+if(!p||j>i-1)
+
+{
+
+printf("插入位置非法\n");
+
+return 0;
+
+}
+
+LNode *s=new LNode();//新元素结点
+    //补充完整，修改新结点的数据域，并建立其与前驱和后继的关系
+    s->data = e;
+    s->next = p->next;
+    p->next = s;
+
+
+return 1;
+
+}
 /*删除第i个结点,删除成功返回1，失败返回0*/
 
 /*输出链表中所有结点的数据值*/
@@ -44,23 +76,20 @@ int main()
 
     //1.采用前插法创建具有5个元素的单链表
 
-     printf("采用前插法输入链表的5个数据:");
-    // LNode *p = (LNode*)malloc(sizeof(LNode));
-    // scanf("%d",&p->data);
-    // printf("%d",p->data);
-    ListCreate_F(L,1);
+    printf("采用前插法输入链表的5个数据:");
+    ListCreate_F(L,5);
 
     
     
     ListPrint(L);
 
-    // //2.在第i个结点前插入新数据
+    //2.在第i个结点前插入新数据
 
-    // printf("依次输入插入位置和数据：");
+    printf("依次输入插入位置和数据：");
+    scanf("%d\n%d",&i,&x);
+    ListInsert(L,i,x);
 
-    // //补充完整
-
-    // ListPrint(L);
+    ListPrint(L);
 
     // //3.调用ListDelete函数，删除位置i的节点;
 
