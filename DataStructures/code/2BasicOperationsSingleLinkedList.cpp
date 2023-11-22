@@ -55,7 +55,24 @@ return 1;
 
 }
 /*删除第i个结点,删除成功返回1，失败返回0*/
+int ListDelete(LinkList &L,int i)
+{
+    LNode *p=L,*q; //q暂存被删除的第i个结点的地址
+    int j=0;
+    //补充完整，实现p指向第i-1个结点
+    for (int k = 0 ; k < i-1; k++) p = p->next;
+    if(!(p->next)||j>i-1)
+    {
+        printf("删除位置非法\n");
+        return 0;
+    }
+//补充完整，建立第i-1个结点和第i+1个结点的直接前驱后继关系，释放第i个结点的内存
+    q = p->next;
+    p -> next = q -> next;
+    free(q);
+return 1;
 
+}
 /*输出链表中所有结点的数据值*/
 void ListPrint(LinkList L)
 {
@@ -67,6 +84,17 @@ void ListPrint(LinkList L)
     }
 }
 /*返回链表中数据值最大的存储位置*/
+LNode* ListMax(LinkList L)
+{
+    LNode *max = new LNode;
+    max->data = L->data;
+    while (L->next)
+    {
+        L = L->next;
+        if (max->data< L->data) max = L;
+    }
+    return max;
+}
 
 int main()
 {
@@ -91,16 +119,17 @@ int main()
 
     ListPrint(L);
 
-    // //3.调用ListDelete函数，删除位置i的节点;
-
-    // printf("输入删除位置：");
-
-    // //补充完整
-
-    // ListPrint(L);
+    //3.调用ListDelete函数，删除位置i的节点;
+    printf("输入删除位置：");
+    scanf("%d",&x);
+    ListDelete(L,x);
+    printf("\n");
+    ListPrint(L);
 
     // //4.调用ListMax函数，输出最大值；
 
-    // //补充完整
+    L = ListMax(L);
+    printf("\n最大值为:");
+    printf("%d",L->data);
     return 1;
 }
