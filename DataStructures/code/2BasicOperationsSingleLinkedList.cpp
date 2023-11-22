@@ -33,15 +33,10 @@ for(j = 0; p && j < i-1; ++j)
 {
     p = p->next;
 }
-
 if(!p||j>i-1)
-
 {
-
-printf("插入位置非法\n");
-
-return 0;
-
+    printf("插入位置非法\n");
+    return 0;
 }
 
 LNode *s=new LNode();//新元素结点
